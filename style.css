@@ -73,14 +73,27 @@ h1{
 .activelink{
     color: silver;
 }/*link to the page that is currently open*/
+.coatofarms_school, .coatofarms_region{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+.coatofarms_school{
+    left: 20px;
+    top: 5px;
+}/*the picture with coat of arms of the school*/
+.coatofarms_region{
+    right: 20px;
+    top: 5px;
+}/*the picture with coat of arms of the region*/
 
 
 
 /* THE SECTION WITH BASIC INFO ABOUT LYCEUM */
 .about{
-    height: 1000px;
+    height: 1300px;
     padding: 35px;
-}
+}/*container*/
 .about_text{
     width: 100%;
     height: 100%;
@@ -88,17 +101,14 @@ h1{
     font-weight: bold;
     letter-spacing: 1.5px;
     font-size: 20px;
-}
+}/*paragraph with all main info*/
 .text_bold{
     font-family: 'header';
     font-weight: 900;
-}
+}/*the class that makes text bold*/
 .text_underlined{
     text-decoration: underline;
-}
-
-
-
+}/*the class that makes text underlined*/
 .about_short{
     width: 350px;
     height: 830px;
@@ -110,7 +120,7 @@ h1{
     font-size: 14px;
     float: right;
     margin-left: 15px;
-}
+}/*wiki look-like table with basic info*/
 .about_short thead{
     display: block;
 }
@@ -153,14 +163,85 @@ h1{
 }
 .about_short_2obj{
     margin-top: 10px;
-}
+}/*template class of type "property-value"*/
 .about_short_2obj td{
     width: 50%;
-    /* height: 25px; */
     display: flex;
     gap: 10px;
     padding-left: 5px;
 }
 .about_short_2obj img{
     height: 18px;
+}
+
+
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    height: 485px;
+    background: #2a6561;
+    display: flex;
+    color: #fff;
+    font-family: 'regular';
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}/*container in the bottom of the page*/
+.footer_logo{
+    width: 85px;
+    height: 85px;
+    margin-top: 125px;
+    margin-left: 185px;
+}/*the picture with coat of arms of the school*/
+.footer_center{
+    width: 310px;
+    height: calc(100% -120px);
+    margin-left: 70px;
+    margin-top: 120px;
+}
+.footer_center_adress{
+    width: 310px;
+    font-size: 24px;
+}
+.footer_center_number{
+    font-size: 14px;
+    margin-top: 90px;
+}
+.footer_center_email{
+    font-size: 14px;
+    margin-top: 25px;
+}
+.footer_right{
+    width: 485px;
+    height: calc(100% - 200px);
+    margin-top: 130px;
+    margin-left: 145px;
+    display: flex;
+    gap: 80px;
+    position: relative;
+}
+.footer_right_linksbox{
+    list-style: none;
+    font-family: 'regular';
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+}
+.footer_right_linksbox li{
+    margin-bottom: 10px;
+}
+.footer_right_linksbox_link{
+    color: #fff;
+    margin-top: 10px;
+}
+.footer_right_rights{
+    width: 120%;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    font-size: 12px;
+}
+.footer_right_rights{
+    font-weight: normal;
+    text-align: center;
 }
