@@ -1,0 +1,100 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+/* FONTS */
+@font-face {
+    font-family: 'header';
+    src: url(fonts/BenguiatGothicC_Bold.ttf)
+}/*the font for headers*/
+@font-face {
+    font-family: 'regular';
+    src: url(fonts/BenguiatGothicC.ttf);
+}/*the font for other components*/
+
+
+
+.sorry404{
+    width: 60%;
+    height: 450px;
+    /* border: 2px dashed #000; */
+    position: absolute;
+    top: calc((100vh - 450px) / 2 - 50px);
+    left: 20%;
+}/*container with text*/
+.big404{
+    width: 60%;
+    font-family: 'header';
+    font-size: 200px;
+    margin-left: 20%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}/*paragraph "404"*/
+.about404{
+    width: 80%;
+    font-family: 'regular';
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}/*paragraph "Ой! Схоже..."*/
+.backtohome404{
+    width: 40%;
+    height: 50px;
+    position: absolute;
+    top: calc(((100vh - 450px) / 2) + 450px);
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}/*container with link to the main page*/
+.backtohome404 a{
+    width: 350px;
+    height: 100%;
+    background: #2a6561;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'regular';
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border-radius: 15px;
+}/*link to the main page */
+.backtohome404 a:hover{
+    background: #1c4441;
+}

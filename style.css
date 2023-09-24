@@ -1,0 +1,166 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+/* FONTS */
+@font-face {
+    font-family: 'header';
+    src: url(fonts/BenguiatGothicC_Bold.ttf)
+}/*the font for headers*/
+@font-face {
+    font-family: 'regular';
+    src: url(fonts/BenguiatGothicC.ttf);
+}/*the font for other components*/
+
+
+
+/* MENU */
+.menu{
+    width: 100%;
+    height: 80px;
+    background: #2a6561;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}/*main menu block*/
+h1{
+    color: #fff;
+    font-family: 'header';
+    font-size: 32px;
+}/*main page title*/
+.navigation{
+    width: calc(100% - 30px);
+    height: 35px;
+    background: #204d4a;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    gap: 30px;
+}/*container with links to all pages*/
+.navigation a{
+    color: #fff;
+    font-family: 'regular';
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}/*link to some page*/
+.activelink{
+    color: silver;
+}/*link to the page that is currently open*/
+
+
+
+/* THE SECTION WITH BASIC INFO ABOUT LYCEUM */
+.about{
+    height: 1000px;
+    padding: 35px;
+}
+.about_text{
+    width: 100%;
+    height: 100%;
+    font-family: 'regular';
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+.text_bold{
+    font-family: 'header';
+    font-weight: 900;
+}
+.text_underlined{
+    text-decoration: underline;
+}
+
+
+
+.about_short{
+    width: 350px;
+    height: 830px;
+    border: 1px solid;
+    padding: 5px;
+    font-family: 'regular';
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    float: right;
+    margin-left: 15px;
+}
+.about_short thead{
+    display: block;
+}
+.about_short tr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_short th{
+    width: 100%;
+    height: 30px;
+    background: #333333;
+    color: #fff;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_short span{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_text_short_withimage img{
+    position: relative;
+    z-index: 0;
+}
+.about_text_short_withimage_description{
+    font-size: 12px;
+    color: #333333;
+    background-color: #fff;
+    opacity: 0.85;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    margin-top: -20px;
+}
+.about_short_2obj{
+    margin-top: 10px;
+}
+.about_short_2obj td{
+    width: 50%;
+    /* height: 25px; */
+    display: flex;
+    gap: 10px;
+    padding-left: 5px;
+}
+.about_short_2obj img{
+    height: 18px;
+}
