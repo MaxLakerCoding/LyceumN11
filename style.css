@@ -8,6 +8,7 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 img {
     max-width: 100%;
@@ -49,6 +50,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }/*main menu block*/
 h1{
     color: #fff;
@@ -63,15 +65,16 @@ h1{
     padding-left: 30px;
     align-items: center;
     gap: 30px;
+    user-select: none;
 }/*container with links to all pages*/
-.navigation a{
+.navigation_link{
     color: #fff;
     font-family: 'regular';
     font-weight: 600;
     letter-spacing: 1.5px;
 }/*link to some page*/
 .activelink{
-    color: silver;
+    color: rgb(85, 151, 218);
 }/*link to the page that is currently open*/
 .coatofarms_school, .coatofarms_region{
     width: 70px;
@@ -91,16 +94,16 @@ h1{
 
 /* THE SECTION WITH BASIC INFO ABOUT LYCEUM */
 .about{
-    height: 1300px;
+    /* height: 1300px; */
     padding: 35px;
-}/*container*/
-.about_text{
-    width: 100%;
-    height: 100%;
     font-family: 'regular';
     font-weight: bold;
     letter-spacing: 1.5px;
     font-size: 20px;
+}/*container*/
+.about_text{
+    width: 100%;
+    height: 100%;
 }/*paragraph with all main info*/
 .text_bold{
     font-family: 'header';
@@ -109,9 +112,14 @@ h1{
 .text_underlined{
     text-decoration: underline;
 }/*the class that makes text underlined*/
+.text_header{
+    font-family: 'header';
+    font-weight: 900;
+    font-size: 24px;
+    text-decoration: underline;
+}/*the class that makes text bigger, bold and underlined*/
 .about_short{
     width: 350px;
-    height: 830px;
     border: 1px solid;
     padding: 5px;
     font-family: 'regular';
@@ -120,6 +128,7 @@ h1{
     font-size: 14px;
     float: right;
     margin-left: 15px;
+    user-select: none;
 }/*wiki look-like table with basic info*/
 .about_short thead{
     display: block;
@@ -141,7 +150,7 @@ h1{
     align-items: center;
 }
 .about_short span{
-    width: 45%;
+    /* width: 45%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,6 +160,7 @@ h1{
     z-index: 0;
 }
 .about_text_short_withimage_description{
+    width: 60%;
     font-size: 12px;
     color: #333333;
     background-color: #fff;
@@ -192,6 +202,7 @@ h1{
     height: 85px;
     margin-top: 125px;
     margin-left: 185px;
+    user-select: none;
 }/*the picture with coat of arms of the school*/
 .footer_center{
     width: 310px;
