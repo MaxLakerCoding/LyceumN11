@@ -185,6 +185,138 @@ h1{
 }
 
 
+.logpass_container{
+    width: 500px;
+    height: 300px;
+    display: block;
+    position: fixed;
+    border: 1px solid #d5d5d5;
+    background: #fff;
+    border-radius: 30px;
+    top: calc((100% - 300px) / 2);
+    left: calc((100% - 500px) / 2);
+    font-family: 'regular';
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+}
+.logpass_input{
+    width: 80%;
+    height: 20px;
+    margin-left: 7%;
+    padding: 10px;
+    border: 2.5px solid #e6e6e6;
+    border-radius: 20px;
+    letter-spacing: 1.5px;
+    background: #fff;
+}
+.logpass_input:hover{
+    background: #eeeeee;
+}
+.logpass_login{
+    margin-top: 15px;
+}
+.logpass_password{
+    margin-top: 20px;
+}
+.logpass_confirm{
+    width: 60%;
+    height: 50px;
+    background: #1877f2;;
+    margin-left: 20%;
+    margin-top: 30px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+.logpass_confirm:hover{
+    background: #1362c9;
+}
+.logpass_confirm_reg{
+    background: #42b72a;
+}
+.logpass_select{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.logpass_select_button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 250px;
+    height: 33px;
+    margin: 0;
+    vertical-align: top;
+    background: #1877f2;
+    border: 1px solid #bbc1e1;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+.logpass_select_button:hover{
+    background: #1362c9;
+    transition: none;
+}
+.logpass_select_button::after {
+    content: "Увійти";
+    width: 80px;
+    height: 20px;
+    border: 3px solid #fff;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    transition: all 0.5s linear;
+    letter-spacing: 1.5px;
+    margin-left: 1px;
+}
+.logpass_select_button:checked::after {
+    animation: toggle-button-checked 0.5s linear;
+    width: 150px;
+    transform: translateX(calc(53% + 4px));
+    border: 3px solid #fff;
+    content: "Зареєструватися";
+    
+    transition: 0.5s linear;
+    letter-spacing: 1.5px;
+}
+.logpass_select_button:checked {
+    background-color: #42b72a;
+}
+.logpass_select_button:checked:hover{
+    background: #39a025;
+    transition: none;
+}
+@keyframes toggle-button-checked{
+    0%{
+        content: "еєструват"; 
+    }
+    50%{
+        content: "реєструвати";
+    }
+    75%{
+        content: "ареєструватис";
+    }
+    100%{
+        content: "Зареєструватися";
+    }
+}
 
 /* FOOTER */
 .footer{
@@ -255,4 +387,14 @@ h1{
 .footer_right_rights{
     font-weight: normal;
     text-align: center;
+}
+
+
+
+.news{
+    min-height: 800px;
+    font-family: 'regular';
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 16px;
 }
