@@ -19,14 +19,21 @@
         <a class="navigation_link activelink" href="news.html">Новини</a>
         <a class="navigation_link" href="our_lyceum.html">Наш ліцей</a>
         <a class="navigation_link" href="404.html">Статті та корисні посилання</a>
+        <div class="account_container">
+            <img src="images/user_guest.svg" class="account_pic" id="user_marker">
+            <p class="account_username">Увійти</p>
+            <img src="images/logout.svg" class="account_pic logout none" id="logout">
+        </div>
     </div>
 
-    <div class="logpass_container">
+    <div class="logpass_container none">
+        <img src="images/cross.svg" class="logpass_exit" id="logpass_exit">
         <div class="logpass_select">
             <input type="checkbox" id="logpass_select_button" class="logpass_select_button">
         </div>
         <input class="logpass_input logpass_login" type="text" id="login" placeholder="Логін">
         <input class="logpass_input logpass_password" type="password" id="password" placeholder="Пароль">
+            <img src="images/hidden.svg" id="visiblehidden">
         <div class="logpass_confirm">Увійти</div>
     </div>
     <section class="news">

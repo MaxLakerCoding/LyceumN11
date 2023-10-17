@@ -51,12 +51,12 @@ a:hover{
     justify-content: center;
     align-items: center;
     user-select: none;
-}/*main menu block*/
+}
 h1{
     color: #fff;
     font-family: 'header';
     font-size: 32px;
-}/*main page title*/
+}
 .navigation{
     width: calc(100% - 30px);
     height: 35px;
@@ -66,16 +66,16 @@ h1{
     align-items: center;
     gap: 30px;
     user-select: none;
-}/*container with links to all pages*/
+}
 .navigation_link{
     color: #fff;
     font-family: 'regular';
     font-weight: 600;
     letter-spacing: 1.5px;
-}/*link to some page*/
+}
 .activelink{
     color: rgb(85, 151, 218);
-}/*link to the page that is currently open*/
+}
 .coatofarms_school, .coatofarms_region{
     width: 70px;
     height: 70px;
@@ -84,40 +84,78 @@ h1{
 .coatofarms_school{
     left: 20px;
     top: 5px;
-}/*the picture with coat of arms of the school*/
+}
 .coatofarms_region{
     right: 20px;
     top: 5px;
-}/*the picture with coat of arms of the region*/
-
+}
+.account_container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #fff;
+    font-family: 'regular';
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.account_username{
+    height: 25px;
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+}
+.account_username:hover{
+    text-decoration: underline;
+}
+.account_pic{
+    width: 28px;
+    height: 28px;
+}
+.logout{
+    margin-left: -8px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.logout:hover{
+    opacity: 1;
+}
 
 
 /* THE SECTION WITH BASIC INFO ABOUT LYCEUM */
 .about{
-    /* height: 1300px; */
     padding: 35px;
     font-family: 'regular';
     font-weight: bold;
     letter-spacing: 1.5px;
     font-size: 20px;
-}/*container*/
+}
 .about_text{
     width: 100%;
     height: 100%;
-}/*paragraph with all main info*/
+}
 .text_bold{
     font-family: 'header';
     font-weight: 900;
-}/*the class that makes text bold*/
+}
 .text_underlined{
     text-decoration: underline;
-}/*the class that makes text underlined*/
+}
 .text_header{
     font-family: 'header';
     font-weight: 900;
     font-size: 24px;
     text-decoration: underline;
-}/*the class that makes text bigger, bold and underlined*/
+}
 .about_short{
     width: 350px;
     border: 1px solid;
@@ -129,7 +167,7 @@ h1{
     float: right;
     margin-left: 15px;
     user-select: none;
-}/*wiki look-like table with basic info*/
+}
 .about_short thead{
     display: block;
 }
@@ -173,7 +211,7 @@ h1{
 }
 .about_short_2obj{
     margin-top: 10px;
-}/*template class of type "property-value"*/
+}
 .about_short_2obj td{
     width: 50%;
     display: flex;
@@ -200,6 +238,18 @@ h1{
     letter-spacing: 1.5px;
     font-size: 16px;
 }
+.logpass_exit{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px;
+}
+.logpass_exit:hover{
+    background: #c5c5c5;
+    border-radius: 50%;
+}
 .logpass_input{
     width: 80%;
     height: 20px;
@@ -217,6 +267,8 @@ h1{
     margin-top: 15px;
 }
 .logpass_password{
+    width: calc(80% - 40px);
+    padding-right: 50px;
     margin-top: 20px;
 }
 .logpass_confirm{
@@ -233,12 +285,16 @@ h1{
     align-items: center;
     color: #fff;
     font-size: 20px;
+    user-select: none;
 }
 .logpass_confirm:hover{
     background: #1362c9;
 }
 .logpass_confirm_reg{
     background: #42b72a;
+}
+.logpass_confirm_reg:hover{
+    background: #39a025
 }
 .logpass_select{
     width: 100%;
@@ -247,6 +303,7 @@ h1{
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+    user-select: none;
 }
 .logpass_select_button{
     -webkit-appearance: none;
@@ -303,6 +360,20 @@ h1{
     background: #39a025;
     transition: none;
 }
+
+#visiblehidden{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 161px;
+    right: 10.5%;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#visiblehidden:hover{
+    background: #e0e0e0;
+}
 @keyframes toggle-button-checked{
     0%{
         content: "еєструват"; 
@@ -328,14 +399,14 @@ h1{
     font-family: 'regular';
     font-weight: bold;
     letter-spacing: 1.5px;
-}/*container in the bottom of the page*/
+}
 .footer_logo{
     width: 85px;
     height: 85px;
     margin-top: 125px;
     margin-left: 185px;
     user-select: none;
-}/*the picture with coat of arms of the school*/
+}
 .footer_center{
     width: 310px;
     height: calc(100% -120px);
@@ -397,4 +468,17 @@ h1{
     font-weight: bold;
     letter-spacing: 1.5px;
     font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+.none{
+    display: none;
 }
